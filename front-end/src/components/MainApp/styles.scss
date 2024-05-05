@@ -1,0 +1,37 @@
+.main-page {
+  display: flex; /* Allow stacking of background and content areas */
+  min-height: 100vh; /* Set minimum height for full viewport coverage */
+}
+
+.background-container {
+  flex: 1; /* Allow background image to fill available space */
+  background-image: url("../../../public/mainPageImage.webp");
+  background-size: cover; /* Ensure image fills the container */
+  background-position: center; /* Center the image within the container */
+}
+
+.content-wrapper {
+  flex: 1; /* Allow content to fill remaining space */
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 50px; /* Add padding for better spacing */
+}
+
+.content-wrapper h1 {
+  font-size: 3em; /* Adjust font size for a large heading */
+  font-weight: bold; /* Emphasize the heading */
+  margin-bottom: 20px; /* Add spacing after the heading */
+}
+
+.content-wrapper p {
+  font-size: 1.2em; /* Set a comfortable reading font size */
+  line-height: 1.5; /* Adjust line spacing for readability */
+  margin-bottom: 30px; /* Add spacing after the description */
+}
+
+.button-container {
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between;
+}
